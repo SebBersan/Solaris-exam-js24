@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="./src/script/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="stars">
+            <div class="sun"></div>
+            <div class="solarsystem">
+                <div class="planet planet-mercury"></div>
+                <div class="planet planet-venus"></div>
+                <div class="planet planet-earth"></div>
+                <div class="planet planet-mars"></div>
+                <div class="planet planet-jupiter"></div>
+                <div class="planet planet-saturn"></div>
+                <div class="planet planet-uranus"></div>
+                <div class="planet planet-neptune"></div>
+            </div>
+        </section>
+        <div class="text-overlay">
+            <h1>SOLSYSTEMET</h1>
+            <h2>SOLARIS</h2>
+        </div>
+        <footer class="footer-logo">ZoCom</footer>
+        
+        <!-- Popup -->
+        <div id="planetPopup" class="popup">
+            <div class="planet-sidepopup"></div>
+            <div class="planet-sidepopup-two"></div>
+            <div class="planet-sidepopup-three"></div>
+
+
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <div id="popupData">Loading...</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
