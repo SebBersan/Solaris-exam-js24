@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Format numbers with spaces as thousands separators
     function formatNumber(number) {
-        return number.toLocaleString('sv-SE');  // Swedish locale for space as thousands separator
+        return number.toLocaleString('sv-SE');
     }
 
     function displayCelestialData(body) {
