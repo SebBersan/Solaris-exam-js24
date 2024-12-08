@@ -69,6 +69,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
+    // Format numbers with spaces as thousands separators
+    function formatNumber(number) {
+        return number.toLocaleString('sv-SE');  // Swedish locale for space as thousands separator
+    }
+
     function displayCelestialData(body) {
         popupData.innerHTML = `
             <div class="popup-content">
@@ -79,19 +84,19 @@ document.addEventListener('DOMContentLoaded', async function () {
                 <div class="planet-details">
                     <div class="detail-item left">
                         <h3>OMKRETS</h3>
-                        <p>${body.circumference} km</p>
+                        <p>${formatNumber(body.circumference)} km</p>
                     </div>
                     <div class="detail-item right">
                         <h3>KM FRÅN SOLEN</h3>
-                        <p>${body.distance} km</p>
+                        <p>${formatNumber(body.distance)} km</p>
                     </div>
                     <div class="detail-item left">
                         <h3>MAX TEMPERATUR</h3>
-                        <p>${body.temp.day}°C</p>
+                        <p>${body.temp.day}C</p>
                     </div>
                     <div class="detail-item right">
                         <h3>MIN TEMPERATUR</h3>
-                        <p>${body.temp.night}°C</p>
+                        <p>${body.temp.night}C</p>
                     </div>
                 </div>
                 <hr>

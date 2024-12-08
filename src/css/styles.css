@@ -6,7 +6,13 @@
     scrollbar-width: none;
 
 }
+html, body {
+    overflow: hidden;
+}
 
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     background: linear-gradient(90deg, #0C164D, #190B22);
     font-family: Arial, sans-serif;
@@ -202,6 +208,11 @@ body {
     font-weight: bolder;
     font-size: 2vw;
     color: rgb(255, 255, 255);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Popup Styles */
